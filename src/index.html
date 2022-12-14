@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- google analytics -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta prefix="og: http://ogp.me/ns#" property="og:title" content="NYC DOHMH Points of Dispensing (POD) Finder">
+  <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website">
+  <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://maps.nyc.gov/pods">
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://maps.nyc.gov/pods/img/og.png">
+  <meta prefix="og: http://ogp.me/ns#" property="og:image:width" content="1200">
+  <meta prefix="og: http://ogp.me/ns#" property="og:image:height" content="626">
+  <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Points of Dispensing (PODs) are temporary sites that are ready to open to provide life-saving medications to anyone who needs them after a biological attack or during a communicable disease outbreak. The sites are located throughout the city and are run by the NYC Department of Health and Mental Hygiene. All NYC POD sites are wheelchair accessible.">
+  <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="NYC.gov">
+
+  <title>NYC DOHMH Points of Dispensing (POD) Finder</title>
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-startup-image" href="img/icon-512.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/icon-60.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/icon-76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/icon-120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icon-152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icon-167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icon-180.png">
+
+  <link rel="stylesheet" href="css/pods.css?%ver%">
+
+  <script src="js/babel-polyfill.js?%ver%"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.8.0/proj4.min.js" integrity="sha512-pLnzlcFjcj9A9ggTfXZyscd+BWAV9pHdDrLekEoTimItxZI3uOAi7CSLXAHGZu7zRgG9Xyhl9bG3A1uRSJJOJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js" integrity="sha512-SGWgwwRA8xZgEoKiex3UubkSkV1zSE1BS6O4pXcaxcNtUlQsOmOmhVnDwIvqGRfEmuz83tIGL13cXMZn6upPyg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="loading" aria-hidden="true">
+  <h2 id="marquee">
+    <div><div><div></div></div></div>   
+  </h2>
+  <div class="legend" aria-hidden="true">
+    <div class="leg">
+      <div class="leg-it">
+        <div class="leg-sw closed"></div><span>Closed</span></div>
+      <div class="leg-it">
+        <div class="leg-sw open"></div><span>Open</span>
+      </div>
+      <div class="leg-it">
+        <div class="leg-sw open-soon"></div><span>Opening Soon</span>
+      </div>
+    </div>
+  </div>
+  <script src="js/pods.js?%ver%"></script>
+</body>
+</html>
